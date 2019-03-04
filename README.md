@@ -4,8 +4,10 @@ This repo contains the code for the paper
 
 Citation to be added.
 
-## Workflow
+## Analysis Plan
 * Identify pages for politics, social issues and science titles. See the paper on how the corpra are identified.
+* Calculate political alignment of the editors of the political pages (alignment.ipynb).
+* Use Wikipedia's API to get the total number of edits made to Wikipedia for each editor whose alignment is assessed (user_query.ipynb).
 * Download and parse the Wikipedia dump files for Wikipedia's complete snapshot (including all editing histories) on 20161201. (See [Wikipedia dump parsers](https://github.com/bill10/wiki_dump_parsers) for details.) In sum, 217 dump files are to be parsed; the following parsers are used.
   * attack_parser: extract page title, time, editor name, attack score, and aggressive score for each edit. It uses [wiki-detox](https://github.com/ewulczyn/wiki-detox) to assess the aggressive and attack scores. It relies on revision_differ.py and diff_match_patch.py (both are included) from [wikihadoop](https://github.com/whym/wikihadoop) to extract the difference between two snapshots of a page. Each line of the output corresponds to an edit. 
   * edit_info_parser: extract page title, time, editor name, and current page length for each edit. Each line of the output  corresponds to an edit.
