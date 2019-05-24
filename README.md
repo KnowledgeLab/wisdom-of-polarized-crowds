@@ -2,7 +2,7 @@
 
 This repo contains the code for the paper 
 
-Citation to be added.
+Feng Shi, Misha Teplitskiy, Eamon Duede & James A. Evans; The wisdom of polarized crowds; Nature Human Behaviour 3, 329–336 (2019).
 
 ## Project Workflow
 * Identify pages for politics, social issues and science titles. See the paper on how the corpora are identified.
